@@ -1,4 +1,4 @@
-# Built in functions
+# 1-3. Built in functions
 
 # len(): Gives length of a string/list
 # type(): Gives the data type
@@ -22,7 +22,7 @@
 # print(type(zip([1,2],[3,4])))    
 
 #####################################################
-# String and Splicing
+# 4. String and Splicing
 
 # Strings on multiple lines, use triple quotes
 # spaces count as letters
@@ -71,7 +71,7 @@
 # print(con.find('t'))
 
 ###########################################################
-# LISTS
+# 5. LISTS
 
 # first, second, third,*rest, tenth = [1,2,3,4,5,6,7,8,9,10]
 # print(first)          # 1
@@ -103,3 +103,21 @@
 
 # sort an array is array.sort()
 # reverse sort is array.sort(reverse=True)
+
+#############################################################
+
+# 6-7. Tuples and Sets
+# fruits = ('banana', 'orange', 'mango', 'lemon')
+# first_fruit = fruits[0]
+# second_fruit = fruits[]
+# print(second_fruit)
+
+# Can change a tuple to a list by using list function
+
+#   new_list = list(tupleName)
+
+# Can change it back to a tuple by using the tuple using the tuple function
+
+#   new_tuple = tuple(listName)9
+
+# To see if something is common to both sets, use intersects
