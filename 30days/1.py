@@ -48,6 +48,58 @@
 
 # flipping a string is: greetings[::-1]
 
-language.count('a') gives all the occurences of 
+# language.count('a') gives all the occurences of 
 
-find give the first occurence of that things index
+# find give the first occurence of that things index
+
+# isalnum() sees if the string follows alphanumeric casing, spaces do not count as alpha numeric
+
+#converting from array to string 
+  #final = ' ' +join(arr)
+
+# string = 'Thirty', 'Days', 'Of', 'Python'
+# con = ' '.join(string)
+# print(con)
+# print(con.upper())
+# print(con.lower())
+
+
+# print(con.index('Thirty'))
+# print(con.replace('Python', 'Seed'))
+# print(con.split('y'))
+# print(con[10])
+# print(con.find('t'))
+
+###########################################################
+# LISTS
+
+# first, second, third,*rest, tenth = [1,2,3,4,5,6,7,8,9,10]
+# print(first)          # 1
+# print(second)         # 2
+# print(third)          # 3
+# print(rest)           # [4,5,6,7,8,9]
+# print(tenth)          # 10
+
+# To check if an item exists within a list, do 
+#   if banana in lists
+
+# to remove from a list, .remove("apple")
+#adding to the end of a list, is append
+#insert is inserting in a specific position in a list
+#pop removes a specific index or the last one in a list
+#You can remove the last one ir 
+# fruits = ['banana', 'orange', 'mango', 'lemon']
+# fruits.pop()
+# print(fruits)       
+
+# newFruits = fruits
+# print (newFruits)
+# fruits[0]= 'new'
+
+# print(newFruits)
+
+#### When assinging one list to another, its pass by refernce and they share the same memory address, so change in one is also present in the other
+### When copying, you assign the new list a new memory address
+
+# sort an array is array.sort()
+# reverse sort is array.sort(reverse=True)
