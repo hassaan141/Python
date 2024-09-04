@@ -213,19 +213,108 @@
 #   string 
 #   random
 
-import random 
-import string
+# import random 
+# import string
 
-def randomPas(*args):
+# def randomPas(*args):
 
-  string = args
-  print(string)
-
-
-
-
-for i in range(7):
-  randomPas(string.ascii_letters, string.digits, string.punctuation)
+#   string = args
+#   print(string)
 
 
 
+
+# for i in range(7):
+#   randomPas(string.ascii_letters, string.digits, string.punctuation)
+
+
+############################################################
+
+# 14. Map/Filter/Reduce function 
+
+  #Takes a function and an interable as its parameters and returns a new list
+# numbers = [1, 2, 3, 4, 5] # iterable
+# def square(x):
+#    return x ** 2
+# numbers_squared = map(square, numbers)
+# print(list(numbers_squared))    # [1, 4, 9, 16, 25]
+
+# #Filter Function: Takes a boolean value and for each specific iterable and returns it
+
+# numbers = [1, 2, 3, 4, 5]  # iterable
+
+# def is_even(num):
+#     if num % 2 == 0:
+#         return True
+#     return False
+
+# even_numbers = filter(is_even, numbers)
+# print(list(even_numbers))       # [2, 4]
+
+
+# #Reduce function returns an a single variable
+# numbers_str = ['1', '2', '3', '4', '5']  # iterable
+# def add_two_nums(x, y):
+#     return int(x) + int(y)
+
+# total = reduce(add_two_nums, numbers_str)
+# print(total)    # 15
+
+#Excersizes
+
+  # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  # def squareN(x):
+  #   return x**2
+
+
+  # squareNum = map(squareN, numbers)
+  # print(list(squareNum))
+
+# countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+# def countriesFilter(x):
+#   if x[0]=='E':
+#     return False
+#   return True
+
+# landEnding=filter(countriesFilter, countries)
+# print(list(landEnding))
+
+# import functools
+
+# countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+
+# def addCount(x,y):
+#   return x+', '+ y
+
+# add = functools.reduce(addCount, countries)
+# print(add)
+
+
+############################################################
+
+# 15. Errors
+  #Chatgpt and Stackoverflow
+
+# 16. Date & Time
+
+# from datetime import datetime
+# new_year = datetime.now()
+# print(new_year)      # 2020-01-01 00:00:00
+# day = new_year.day
+# month = new_year.month
+# year = new_year.year
+# hour = new_year.hour
+# minute = new_year.minute
+# second = new_year.second
+
+# from datetime import datetime
+# # current date and time
+# now = datetime.now()
+# t = now.strftime("%H:%M:%S")
+# print("time:", t)
+# time_one = now.strftime("%m/%d/%Y, %H:%M:%S")
+# # mm/dd/YY H:M:S format
+# print("time one:", time_one)
+# time_two = now.strftime("%d/%m/%Y, %H:%M:%S")
+# # dd/mm/YY H:M:S format
+# print("time two:", time_two)
