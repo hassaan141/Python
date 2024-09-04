@@ -121,3 +121,111 @@
 #   new_tuple = tuple(listName)9
 
 # To see if something is common to both sets, use intersects
+
+# To check if something isnt common to both sets, use differece()
+  # difference()
+
+###########################################################
+
+# 8. Dictionaries
+
+# dict = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+# print(dict['key1']) 
+# print(dict['key4']) 
+
+# # To add a new key and value pair to a dict, do, can also change items this way
+# dict['key5'] = 'value'
+
+# # to print out onlu that values can do 
+
+# keys = dict.keys()
+# print(keys)     # dict_keys(['key1', 'key2', 'key3', 'key4'])
+
+# values = dict.values()
+# print(values)     # dict_values(['value1', 'value2', 'value3', 'value4'])
+
+#####################################################################
+
+# 10. While and For loops
+
+# When iterating a list
+
+# numbers = [1,2,3,4,5]
+# words = 'Python'
+
+# for i in numbers:
+#   print(i)
+
+# When iterating over a dictionary, use .items()
+
+# person = {
+#     'first_name':'Asabeneh',
+#     'last_name':'Yetayeh',
+#     'age':250,
+#     'country':'Finland',
+#     'is_marred':True,
+#     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+#     'address':{
+#         'street':'Space street',
+#         'zipcode':'02210'
+#     }
+# }
+# # for key in person:
+# #     print(key)
+# # for value in person:
+# #     print(value)
+
+# # for key, value in person.items():
+# #     print(key, value) # this way we get both keys and values printed out
+  
+# for key in person:
+#     if key == 'skills':
+#         for skill in person['skills']:
+#             print(skill)
+
+# def square_number (n):
+#     return n * n
+# def do_something(f, x):
+#     return f(x)
+# print(do_something(square_number, 3)) # 9
+
+#############################################################
+
+# 12. Modules in Python
+
+
+# main.py file
+# import module
+# print(module.generate_full_name('Asabeneh', 'Yetayeh')) # Asabeneh Yetayeh
+
+# TO import functions from a file, you can specifically import those
+  #from mymodule import generate_full_name, sum_two_nums, person, gravity
+
+# Can also rename functions when importing 
+  #from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
+
+
+# Famous modules are 
+
+#   OS, imports directory
+#   statistics
+#   math 
+#   string 
+#   random
+
+import random 
+import string
+
+def randomPas(*args):
+
+  string = args
+  print(string)
+
+
+
+
+for i in range(7):
+  randomPas(string.ascii_letters, string.digits, string.punctuation)
+
+
+
