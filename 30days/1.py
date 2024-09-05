@@ -318,3 +318,39 @@
 # time_two = now.strftime("%d/%m/%Y, %H:%M:%S")
 # # dd/mm/YY H:M:S format
 # print("time two:", time_two)
+
+####################################################
+
+# Unpacking a 
+# Can unpack a list using a* method
+
+# numbers = [1,2,3,4,5,6]
+# first, second, *third = numbers
+
+# print(first, second, third)
+
+# enumerate
+ #To get an index and the value, can you enumeratie
+
+# for index,x in enumerate(numbers):
+#   print(str(x)+ ' is in index '+str(index))
+
+##############################################3#\##########
+
+# 19. File Handling
+
+# To open a file, do 
+  # open('filename', r)
+
+f = open('file.txt')
+txt = f.read()
+print(txt)
+f.close()
+
+#Or 
+
+with open('file.txt') as f:
+    lines = f.read().splitlines()
+    print(type(lines))
+    print(lines)
+
