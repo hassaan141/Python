@@ -342,15 +342,57 @@
 # To open a file, do 
   # open('filename', r)
 
-f = open('file.txt')
-txt = f.read()
-print(txt)
-f.close()
+# f = open('file.txt')
+# txt = f.read()
+# print(txt)
+# f.close()
 
-#Or 
+# #Or 
 
-with open('file.txt') as f:
-    lines = f.read().splitlines()
-    print(type(lines))
-    print(lines)
+# with open('file.txt') as f:
+#     lines = f.read().splitlines()
+#     print(type(lines))
+#     print(lines)
+
+#Read line
+
+# f = open('file.txt')
+# txt = f.readline()
+# print(txt)
+# f.close()
+
+#Add to a file or create a new file
+
+# f = open('file.txt','a')
+# f.write('Sheikh Muhammad Ayyub')
+# txt= f.read()
+# print(txt)
+# f.close()
+
+#JSON TO DICT, JSON IS TYPE STRING
+# import json
+# # python dictionary
+# person = {
+#     "name": "Asabeneh",
+#     "country": "Finland",
+#     "city": "Helsinki",
+#     "skills": ["JavaScrip", "React", "Python"]
+# }
+# # let's convert it to  json
+
+# person_json = json.dumps(person, indent=4) # indent could be 2, 4, 8. It beautifies the json
+# print(type(person_json))
+# print(person_json)
+
+import json
+
+person= {
+  'name' : 'Muhammad',
+  'Hobby':'Arm',
+  'Skills':['Throwing', 'trolling']
+}
+
+f = open('jsonTest.json','w', encoding = 'utf-8')
+json.dump(person, f, ensure_ascii=False)
+
 
