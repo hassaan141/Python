@@ -384,15 +384,36 @@
 # print(type(person_json))
 # print(person_json)
 
-import json
+# import json
 
-person= {
-  'name' : 'Muhammad',
-  'Hobby':'Arm',
-  'Skills':['Throwing', 'trolling']
-}
+# person= {
+#   'name' : 'Muhammad',
+#   'Hobby':'Arm',
+#   'Skills':['Throwing', 'trolling']
+# }
 
-f = open('jsonTest.json','w', encoding = 'utf-8')
-json.dump(person, f, ensure_ascii=False)
+# f = open('jsonTest.json','w', encoding = 'utf-8')
+# json.dump(person, f, ensure_ascii=False)
 
+############################################
+# 20. PIP manager
 
+# import webbrowser
+
+# url = 'https://www.youtube.com/watch?v=pM520_JLR6w'
+
+# webbrowser.open_new_tab(url)
+
+# import requests
+
+# url = 
+
+# https://www.tesla.com/en_CA/careers/search/job/internship-correctness-reliability-engineer-dojo-winter-spring-2025-226993
+# https://www.tesla.com/en_CA/careers/search/job/internship-ml-performance-software-engineer-dojo-winter-spring-2025-226976
+# https://www.tesla.com/en_CA/careers/search/job/internship-android-engineer-mobile-software-winter-spring-2025-225141
+# https://www.tesla.com/en_CA/careers/search/job/internship-test-automation-and-validation-engineer-vehicle-firmware-winter-spring-2025-225750
+# https://www.tesla.com/en_CA/careers/search/job/internship-system-validation-automation-engineer-vehicle-firmware-winter-spring-2025-224835
+# https://www.tesla.com/en_CA/careers/search/job/internship-integration-platforms-software-developer-vehicle-firmware-winter-spring-2025-225936
+# https://www.tesla.com/en_CA/careers/search/job/internship-bms-embedded-systems-software-engineer-vehicle-firmware-winter-spring-2025-225929
+# https://www.tesla.com/en_CA/careers/search/job/internship-reinforcement-learning-engineer-tesla-bot-winter-spring-2025-223250
+# https://www.tesla.com/en_CA/careers/search/job/internship-embedded-software-engineer-firmware-platforms-winter-spring-2025-225195
