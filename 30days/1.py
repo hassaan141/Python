@@ -417,3 +417,25 @@
 # https://www.tesla.com/en_CA/careers/search/job/internship-bms-embedded-systems-software-engineer-vehicle-firmware-winter-spring-2025-225929
 # https://www.tesla.com/en_CA/careers/search/job/internship-reinforcement-learning-engineer-tesla-bot-winter-spring-2025-223250
 # https://www.tesla.com/en_CA/careers/search/job/internship-embedded-software-engineer-firmware-platforms-winter-spring-2025-225195
+
+###########################################################
+
+# 21. Classes and Objects
+
+class Person:
+  def __init__(self, firstname, lastname, age, country):
+    self.lastname = lastname
+    self.firstname = firstname
+    self.age = age
+    self.country = country
+
+  def firstAndLast(self):
+    return f'This persons full name is {self.firstname} {self.lastname}'
+  
+
+p = Person('Muhammad', 'Farooqi', '19', 'Canada')
+print(p.firstname)
+print(p.lastname)
+print(p.age)
+print(p.country)
+print(p.firstAndLast())
