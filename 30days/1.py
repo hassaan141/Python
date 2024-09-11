@@ -432,3 +432,26 @@ status = response.status_code
 content=response.content
 soup = BeautifulSoup(content, 'html.parser')
 print(soup.title)
+
+
+###########################################################
+
+# 21. Classes and Objects
+
+class Person:
+  def __init__(self, firstname, lastname, age, country):
+    self.lastname = lastname
+    self.firstname = firstname
+    self.age = age
+    self.country = country
+
+  def firstAndLast(self):
+    return f'This persons full name is {self.firstname} {self.lastname}'
+  
+
+p = Person('Muhammad', 'Farooqi', '19', 'Canada')
+print(p.firstname)
+print(p.lastname)
+print(p.age)
+print(p.country)
+print(p.firstAndLast())
