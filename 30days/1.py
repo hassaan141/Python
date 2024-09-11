@@ -417,3 +417,18 @@
 # https://www.tesla.com/en_CA/careers/search/job/internship-bms-embedded-systems-software-engineer-vehicle-firmware-winter-spring-2025-225929
 # https://www.tesla.com/en_CA/careers/search/job/internship-reinforcement-learning-engineer-tesla-bot-winter-spring-2025-223250
 # https://www.tesla.com/en_CA/careers/search/job/internship-embedded-software-engineer-firmware-platforms-winter-spring-2025-225195
+
+##############################################################################
+
+# 22. Web Scrapping
+
+import requests
+from bs4 import BeautifulSoup 
+
+url= 'http://www.bu.edu/president/boston-university-facts-stats/'
+response = requests.get(url)
+# lets check the status
+status = response.status_code
+content=response.content
+soup = BeautifulSoup(content, 'html.parser')
+print(soup.title)
