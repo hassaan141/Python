@@ -422,36 +422,56 @@
 
 # 22. Web Scrapping
 
-import requests
-from bs4 import BeautifulSoup 
+# import requests
+# from bs4 import BeautifulSoup 
 
-url= 'http://www.bu.edu/president/boston-university-facts-stats/'
-response = requests.get(url)
-# lets check the status
-status = response.status_code
-content=response.content
-soup = BeautifulSoup(content, 'html.parser')
-print(soup.title)
+# url= 'http://www.bu.edu/president/boston-university-facts-stats/'
+# response = requests.get(url)
+# # lets check the status
+# status = response.status_code
+# content=response.content
+# soup = BeautifulSoup(content, 'html.parser')
+# print(soup.title)
 
 
 ###########################################################
 
 # 21. Classes and Objects
 
-class Person:
-  def __init__(self, firstname, lastname, age, country):
-    self.lastname = lastname
-    self.firstname = firstname
-    self.age = age
-    self.country = country
+# class Person:
+#   def __init__(self, firstname, lastname, age, country):
+#     self.lastname = lastname
+#     self.firstname = firstname
+#     self.age = age
+#     self.country = country
 
-  def firstAndLast(self):
-    return f'This persons full name is {self.firstname} {self.lastname}'
+#   def firstAndLast(self):
+#     return f'This persons full name is {self.firstname} {self.lastname}'
   
 
-p = Person('Muhammad', 'Farooqi', '19', 'Canada')
-print(p.firstname)
-print(p.lastname)
-print(p.age)
-print(p.country)
-print(p.firstAndLast())
+# p = Person('Muhammad', 'Farooqi', '19', 'Canada')
+# print(p.firstname)
+# print(p.lastname)
+# print(p.age)
+# print(p.country)
+# print(p.firstAndLast())
+
+
+
+##########################################################
+
+# 23. Virtual Env
+
+# python -m venv venv 
+# then activate
+
+
+# 24. Numpy
+
+# Can create arrays using numpy and do addition subtraction multiplication and division
+
+# Can get first rows by first_row = two_dimension_array[0]
+# can get first column by first_column= two_dimension_array[:,0]\
+
+
+# 25. Pandas 
